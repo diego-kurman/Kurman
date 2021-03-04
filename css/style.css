@@ -1,0 +1,108 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #263238;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin:  auto;
+}
+
+.logo {
+    margin-top: 30%;
+   
+}
+  
+.lds-dual-ring {
+    /* display: inline-block; */
+    width: 80px;
+    height: 80px;
+    margin:  auto;
+  
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 3px solid rgb(214, 67, 8);
+    border-color: #14003E transparent #14003E transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+    
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* engrenagens */
+
+  .loader {
+    position: absolute;
+    top: 60%;
+    left: 46%;
+    margin: auto;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 525px;
+  }
+  .engrenagemUm {
+    position: absolute;
+    top: 50%;
+    right: -30%;
+  }
+  .engrenagemDois {
+    position: absolute;
+    top: 36%;
+    right: 0%;
+  }
+  .engrenagemTres {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+  }
+  .plane {
+    animation: spin 10s linear infinite;
+    fill: #FFF;
+    transform-origin: 50% 50%;
+  }
+  .planeDois {
+    animation: spin 10s linear infinite;
+    fill: #FFF;
+    transform-origin: 50% 50%;
+  }
+  .planeDois {
+    animation: spin 10s linear infinite;
+    fill: #FFF;
+    transform-origin: 50% 50%;
+  }
+  
+  @keyframes spin{
+      0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  p{
+      color: rgb(7, 2, 15);
+      text-shadow: 0px 0px 1px #2E00ED;
+  }
