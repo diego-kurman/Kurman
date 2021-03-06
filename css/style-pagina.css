@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #16151b;
+    color: #180079;
+}
+
+.dots {
+    animation: pontos 4s ease-in-out infinite;
+    
+}
+
+@keyframes pontos {
+    from {
+        
+            display: none
+    }
+
+    to{ 
+        
+        display:block;}
+    
+
+}
