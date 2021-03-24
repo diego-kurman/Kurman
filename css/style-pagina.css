@@ -11,13 +11,13 @@ body{
 
 .dots {
     animation: pontos 4s ease-in-out infinite;
-    
+
 }
 
 @keyframes pontos {
     from {
         
-            display: none
+            display: none;
     }
 
     to{ 

@@ -1,14 +1,545 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-pagina.css">
-    <title>Document</title>
-</head>
-<body>
-    Pagina em criação <span class="dots">...</span>
-    
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;Kurman/&gt;</title>
+
+    <link
+      rel="shortcut icon"
+      href="./src/assets/img/me.svg"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/menu.css" />
+    <link rel="stylesheet" href="src/css/home.css" />
+    <link rel="stylesheet" href="src/css/overview.css" />
+    <link rel="stylesheet" href="src/css/projects.css" />
+    <link rel="stylesheet" href="src/css/study.css" />
+    <link rel="stylesheet" href="src/css/open-source.css" />
+    <link rel="stylesheet" href="src/css/about.css" />
+    <link rel="stylesheet" href="src/css/scroll.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="navbar transform" id="navbar"></div>
+
+    <div class="name-scroll transform" id="name-scroll">
+      <a href="#home">
+        <span class="light-green">&lt;</span>Diego Kurman<span
+          class="light-green"
+          >/&gt;</span
+        >
+      </a>
+    </div>
+
+    <a class="scroll-up hidden" href="#home" id="scroll-up">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <div class="menu hidden" id="menu">
+      <ul>
+        <li id="li-menu">
+          <i class="fas fa-bars menu-icon"></i>
+          <ul class="dropdown" aria-label="submenu" id="dropdown">
+            <li>
+              <a href="#home">Início<i class="fas fa-home"></i></a>
+            </li>
+            <li>
+              <a href="#overview">Diego<i class="fas fa-user-circle"></i></a>
+            </li>
+            <li>
+              <a href="#projects">Projetos<i class="fas fa-code"></i></a>
+            </li>
+            <li>
+              <a href="#study">Estudos<i class="fas fa-graduation-cap"></i></a>
+            </li>
+            <li>
+              <a href="#about">Sobre<i class="fas fa-address-card"></i></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="home" id="home">
+      <div class="name">
+        <span
+          ><span class="light-green">&lt;</span>Diego Kurman<span
+            class="light-green"
+            >/&gt;</span
+          >
+        </span>
+        <span class="sub-name">Desenvolvedor <span>FrontEnd</span></span>
+      </div>
+
+      <div class="start anime">
+        <a href="#overview">
+          <button><i class="fab fa-google-play"></i> Start</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="overview" id="overview">
+      <div class="title anime-opacity">
+        <div class="typing typing-anime" id="typing-overview">
+          <span class="white">$</span>
+          <span class="magenta">cat</span>
+          <span class="yellow">Kurman.json</span>
+        </div>
+      </div>
+
+      <div class="bar anime-opacity"></div>
+      <div class="divider-overview anime-opacity"></div>
+
+      <div class="rivaldo anime">
+        <span class="chave-0">{</span>
+
+        <span class="line">
+          <span class="tab key">"nome"</span><span class="two-point">:</span>
+          <span class="value">"Diego Kurman"</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"estado"</span><span class="two-point">:</span>
+          <span class="value">"São Paulo"</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"idade"</span><span class="two-point">:</span>
+          <span class="number">22</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"email"</span><span class="two-point">:</span>
+          <span class="value">"diego.kurman@icloud.com"</span
+          ><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"github"</span><span class="two-point">:</span>
+          <span class="value">"https://github.com/diego-kurman"</span
+          ><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"experiências"</span
+          ><span class="two-point">:</span>
+          <span class="value">" T.I - Goldman Sachs | Analista de sistemas Bandtec"</span
+          ><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"formação"</span
+          ><span class="two-point">:</span>
+          <span class="value">"Técnico em Informática"</span
+          ><span class="comma">,</span>
+        </span>
+
+        
+       
+
+        <span class="line">
+          <span class="tab key">"stack"</span><span class="two-point">:</span>
+          <span class="number">[</span>
+          <span class="value">"React"</span><span class="comma">,</span>
+          <span class="value">"TypeScript/JavaScript"</span
+          ><span class="comma">,</span>
+          <span class="value">"HTML/CSS/SCSS"</span>
+          <span class="number">]</span>
+        </span>
+
+        <span class="chave-1">}</span>
+      </div>
+    </div>
+
+    <div class="projects" id="projects">
+      <div class="divider anime-opacity">
+        <span></span
+        ><span
+          ><div class="title">
+            <div class="typing typing-anime" id="typing-projects">
+              $
+              <div class="cd magenta">cd</div>
+              <div class="yellow">Projetos</div>
+            </div>
+          </div></span
+        ><span></span>
+      </div>
+
+      <div class="project pizza anime-opacity">
+        <div class="article pizza-progress">
+          <div class="link">
+            
+            <a
+              href="https://github.com/BandTec/Fastech"
+              target="_blank"
+              title="Ir para o repositório"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-name">
+            <span class="number">1.</span>Fastech
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i> Aplicação Para moritoramento de 
+                maquinas
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> API Oshi
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> Java & Javascript
+              </li>
+              <li><i class="fas fa-chevron-right"></i> API Telegram</li>
+              <li>
+                <div class="progress">
+                  <div class="progress-done" data-done="56"></div>
+                  <div class="progress-text">
+                    <div>Java</div>
+                    <div class="percentage">56 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="25"></div>
+                  <div class="progress-text">
+                    <div>JavaScript</div>
+                    <div class="percentage">25 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="12"></div>
+                  <div class="progress-text">
+                    <div>CSS</div>
+                    <div class="percentage">12 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <a
+            href="https://github.com/BandTec/Fastech"
+            target="_blank"
+            title="Ir para PizzaDelivery"
+          >
+            <img src="./src/assets/img/Fastech.png" alt="Pizza Delivery" />
+            <img src="./src/assets/img/Fastech.png" alt="Pizza Delivery" />
+            <img src="./src/assets/img/Fastech.png" alt="Pizza Delivery" />
+          </a>
+        </div>
+      </div>
+
+      <div class="divider anime-opacity">
+        <span></span><span><i class="fas fa-code"></i></span><span></span>
+      </div>
+
+      <div class="project textando anime-opacity">
+        <div class="article textando-progress">
+          <div class="link">
+           
+            <a
+              href="https://github.com/diego-kurman/Focus"
+              target="_blank"
+              title="Ir para o repositório"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-name">
+            <span class="number">2.</span>Focus
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i> Aplicação 
+                para almentar o foco
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> Projeto NLW4 
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> React e typescript
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-done" data-done="34"></div>
+                  <div class="progress-text">
+                    <div>React</div>
+                    <div class="percentage">34 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="33"></div>
+                  <div class="progress-text">
+                    <div>TipeScript</div>
+                    <div class="percentage">33 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="32"></div>
+                  <div class="progress-text">
+                    <div>Css</div>
+                    <div class="percentage">32 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container">
+          <a
+            href="https://github.com/diego-kurman/Focus"
+            target="_blank"
+            title="Ir para Textando"
+          >
+            <img src="./src/assets/img/focus.png" alt="focus" />
+            <img src="./src/assets/img/focus.png" alt="focus" />
+            <img src="./src/assets/img/focus.png" alt="focus" />
+          </a>
+        </div>
+      </div>
+
+      <div class="divider anime-opacity">
+        <span></span><span><i class="fas fa-code"></i></span><span></span>
+      </div>
+
+      <div id="blackconcept" class="project gitdex anime-opacity ">
+        <div class="article gitdex-progress">
+          <div class="link">
+            <a
+              href="https://diego-kurman.github.io/Individual_Project/pagina.html"
+              target="_blank"
+              title="Ir para GitDex"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            <a
+              href="https://github.com/diego-kurman/Individual_Project"
+              target="_blank"
+              title="Ir para o repositório"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-name">
+            <span class="number">3.</span>Black Concept
+          </div>
+          <div class="project-description anime-opacity">
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i> Pagina de concientização cultural
+              </li>
+              <li><i class="fas fa-chevron-right"></i> HTML</li>
+              <li><i class="fas fa-chevron-right"></i> CSS</li>
+              <li><i class="fas fa-chevron-right"></i> Javascript</li>
+              <li><i class="fas fa-chevron-right"></i> Prototipação Figma</li>
+              <li>
+                <div class="progress">
+                  <div class="progress-done" data-done="49"></div>
+                  <div class="progress-text">
+                    <div>HTML</div>
+                    <div class="percentage">49 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="31"></div>
+                  <div class="progress-text">
+                    <div>CSS</div>
+                    <div class="percentage">31 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="16"></div>
+                  <div class="progress-text">
+                    <div>JavaScript</div>
+                    <div class="percentage">16 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container container-Black">
+          <a
+            href="https://diego-kurman.github.io/Individual_Project/pagina.html"
+            target="_blank"
+            title="Ir para GitDex"
+          >
+            <img src="./src/assets/img/blackconcept.png" alt="Black Concept" />
+            <img src="./src/assets/img/blackconcept.png" alt="Black Concept" />
+            <img src="./src/assets/img/blackconcept.png" alt="Black Concept" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="study" id="study">
+      <div class="divider anime-opacity">
+        <span></span
+        ><span
+          ><div class="title">
+            <div class="typing typing-anime" id="typing-study">
+              $
+              <div class="cd magenta">cd</div>
+              <div class="yellow">Estudos</div>
+            </div>
+          </div></span
+        ><span></span>
+      </div>
+
+      <div class="study-article anime">
+        <div class="tech angular tech-border">
+          <div class="tech-title">Angular</div>
+          <div class="tech-description">
+            Iniciei os estudos com o <span>framework</span> ao final de
+            <span>2020</span>. Deste então já fiz diversos
+            <span>projetos</span> usando ele. Além disso, Angular é a principal
+            ferramenta em meu <span>estágio</span>.
+          </div>
+          <div class="tech-logo">
+            <i class="fab fa-angular"></i>
+          </div>
+        </div>
+        <div class="tech node tech-border">
+          <div class="tech-title">NodeJS</div>
+          <div class="tech-description">
+            Atualmente meu maior <span>foco</span> é Angular, porém tenho desejo
+            de ser um desenvolvedor <span>FullStack</span>. Desse modo, estudo
+            NodeJS nos momentos vagos.
+            <span
+              ><a
+                href="https://github.com/pedrorivald/NLW4-NodeJS"
+                target="_blank"
+                title="Projeto NodeJS NextLevelWeek 4"
+                >Projeto da Trilha Node na NLW4</a
+              ></span
+            >.
+          </div>
+          <div class="tech-logo">
+            <i class="fab fa-node"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <div class="about" id="about">
+      <div class="divider anime-opacity">
+        <span></span
+        ><span
+          ><div class="title">
+            <div class="typing typing-anime" id="typing-about">
+              $
+              <div class="cd magenta">cd</div>
+              <div class="yellow">Sobre</div>
+            </div>
+          </div></span
+        ><span></span>
+      </div>
+
+      <div class="about-article anime">
+        <div class="about-contact">
+          <div class="img">
+            <img
+              src="./src/assets/img/diego.jpeg"
+              alt="Rivaldo"
+              title="Avatar Rivaldo"
+            />
+          </div>
+
+          <div class="contacts">
+            <div class="contact">
+              <a
+                href="https://github.com/diego-kurman"
+                target="_blank"
+                title="Github"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+
+            <div class="contact">
+              <a
+                href="mailto:diego.kurman@icloud.com"
+                target="_blank"
+                title="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+
+            
+
+            <div class="contact">
+              <a
+                href="https://www.linkedin.com/in/diego-kurman-5a32a1176/"
+                title="LinkedIn"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+
+            <div class="contact">
+              <a
+                href="https://app.rocketseat.com.br/me/diego-kurman-1594417939"
+                target="_blank"
+                title="Rocketseat"
+                ><i class="fas fa-rocket"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="text">
+            <i class="fas fa-quote-left"></i> Em 2018 comecei um
+            <span>curso</span> Técnico de <span>Informática</span>, nesse
+            momento obtive meu primeiro contato com <span>programação</span> e
+            achei <span>surreal</span> o poder que ela tem de
+            <span>transformar</span> o mundo. Desde então me dedico diariamente
+            aos estudos referentes a programação, com <span>ênfase</span> no
+            desenvolvimento <span>FrontEnd</span>.
+            achei <span>surreal</span> o poder que ela tem de
+            <span>transformar</span> o mundo. Desde então me dedico diariamente
+            aos estudos referentes a programação, com <span>ênfase</span> no
+            desenvolvimento <span>FrontEnd</span>.
+            <i class="fas fa-quote-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/particles.js"></script>
+    <script src="src/js/fire.js"></script>
+    <script src="src/js/app.js"></script>
+    <script src="./src/js/scroll.js"></script>
+    <script src="src/js/events.js"></script>
+  </body>
 </html>
