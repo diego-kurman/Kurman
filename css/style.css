@@ -159,9 +159,9 @@ body{
   position: absolute;
   width: 10px;
   height: 10px;
-  background: rgb(255, 255, 255);
+  background: rgb(238, 8, 150);
   border-radius: 50%;
-  box-shadow: 1px 1px 10px rgba(114, 114, 114, 0.726);
+  box-shadow: 1px 1px 10px rgb(253, 6, 191);
 }
 
 .loader-29 div:nth-child(1) {
