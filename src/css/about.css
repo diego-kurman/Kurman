@@ -231,7 +231,7 @@
   }
 
   .about-contact .img {
-    width: 60%;
+    display: none;
   }
 
   .about-text {
@@ -250,7 +250,7 @@
   }
 
   .about-contact .img {
-    width: 56%;
+   display: none;
   }
 
   .about-text .text {
