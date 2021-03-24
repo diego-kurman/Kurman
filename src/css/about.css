@@ -108,11 +108,12 @@
   justify-content: center;
   align-items: center;
   padding: 40px;
+
 }
 
 .about-text .text {
   color: var(--color-lightWhite);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-align: center;
 }
