@@ -258,6 +258,7 @@
   .article {
     transform: scale(0.9) translateY(25%);
     padding: 20px
+    margin-bottom: 7vh;
   }
 
   .article .project-description ul li {
@@ -292,6 +293,7 @@
 
   .article {
     transform: scale(0.9) translateY(20%);
+    margin-bottom:  7vh;
   }
 
   .article .project-description ul li {
