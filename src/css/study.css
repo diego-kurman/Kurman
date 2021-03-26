@@ -41,7 +41,7 @@
   display: flex;
   justify-content: space-around;
   padding: 30px;
-  background-color: var(--background-color);
+  background-color: #8b87991a;
   border-radius: 40px;
   transition: .5s;
 }
