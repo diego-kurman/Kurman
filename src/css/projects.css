@@ -131,7 +131,7 @@
 .project .container-Black {
   position: relative;
   width: 550px;
-  height: 317px;
+  height: 285px;
   opacity: 0.8;
   transform: rotate(-30deg) skew(25deg) scale(.7);
   transition: 0.5s;
